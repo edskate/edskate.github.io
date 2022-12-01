@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layoult grid</title>
+    <style>
+       
+        .container{
+            display: grid;
+            background-color: rgba(0,0,0,0.5);
+            height: 500px;
+            width: 300pz;
+            grid-template-columns: 40px 80% auto;
+            grid-template-rows: 30px 20% auto;
+            border: 3px solid;
+            box-shadow: 20px 20px 20px #000000;
+          }
+          
+          .item{
+            border: 1px solid black;
+            background-color: #c0c0c0;
+            border: 2px solid;
+            box-shadow: 12px 12px 13px #000000;
+          }
+          .container{
+            /***********/
+            grid-template-columns: 1fr 50px 2fr;
+            /***********/
+          }
+          .item-1{
+            margin: 0px;
+            padding:1px;
+background-color: #ff0080;
+text-align: center;
+
+
+          }
+          .item-2{
+            background-color: #00ff40;
+            text-align: center;
+            margin: 0px;
+            border: 2px solid black;
+               
+            }
+            .item-3{
+                background-color: #ffff00;
+                text-align: center;
+              
+                text-shadow: 2px 3px 4px ;
+                border: 2px solid 2px 3px 4px #008040;
+            }
+            .item-4{
+background-color: #0080ff;
+text-align: center;
+margin: 10px;
+padding: 1px;
+width: 230px;
+height:80px;
+border: 2px solid black;
+            }
+            .item-5{
+                background-color: #008000;
+                text-align: center;
+                height:465px;
+                border: 2px solid black;
+                font-size: x-large;
+            }
+            .item-6{
+                background-color: #00ffff;
+                text-align: center;
+                margin: 10px;
+                height:200px;
+                border: 2px solid black;
+                font-size: small;
+            }
+            .item-7{
+background-color:#ff0000;
+text-align: center;
+margin: 10px;
+border: 2px solid black;
+            }
+            h1{
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <h1>This  is Layoult Grid css e Flex-box.Color</h1>
+    <br>
+    <div class="container">
+        <div class="item item-1">Thi sis 🐈  </div>
+        <div class="item item-2">🐘 </div> 
+        <div class="item item-3">🐕 </div>
+        <div class="item item-4">🦒 </div>
+        <div class="item item-5">🐒 </div>
+        <div class="item item-6">🐦 </div>
+        <div class="item item-7">🤾 </div>
+      </div>
+</body>
+</html>
