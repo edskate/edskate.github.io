@@ -1,0 +1,123 @@
+body,
+p   {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;      /* tamanho da fonte */
+    font-style: italic;     /* estilo */
+    color: rgb(80, 78, 78); /* cor do texto */
+    text-align: center;     /* alinhamento */
+}
+
+
+.principal {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas: "cabecalho cabecalho" 
+                         "secao barra-lateral" 
+                         "rodape rodape";
+}
+
+header {
+   grid-area: cabecalho;
+   background-image: url(ede1c0008ceae41a442d33ed453a2eff);
+}
+
+section {
+    grid-area: secao;
+    background-color: #E05DA1;
+ }
+
+ aside {
+    grid-area: barra-lateral;
+    background-color: #E0D475;
+ }
+
+ footer {
+    grid-area: rodape;
+ }
+
+ footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .parte1, .parte2, .parte3 {
+    width: 25%;
+    background-color: #5de05e;
+ }
+
+ .parte2 {
+    width: 50%;
+    margin: 0 2px;
+ }
+
+ .parte3 {
+    margin: 0;
+ }
+ @media(max-width: 992px) {
+    .principal {
+        grid-template-columns: 100%;
+        grid-template-areas: "cabecalho" "secao" "barra-lateral" "rodape";
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .parte1, .parte2, .parte3 {
+        margin: 0;
+        border: solid 1px #fff;
+        width: 49%;
+    }
+
+    .parte2 {
+        width: 100%;
+        order: -1;
+    }
+ }
+ strong {
+	color: blue;
+}
+
+h1 {
+	font-style: italic;
+}
+.meu-circulo{
+    r: 30;
+    cx: 50;
+    cy: 40;
+    fill: lightgreen;
+    stroke: orange;
+    stroke-width: 5;
+    transition: all 1s ease;
+  }
+  
+  .meu-circulo:hover{
+    cx: 70;
+    fill: green;
+    stroke-width: 10;
+  }
+  html, body{
+    min-height: 300px;
+  }
+  
+  .meu-circulo{
+    r: 30;
+    cx: 50;
+    cy: 40;
+    fill: lightgreen;
+    stroke: orange;
+    stroke-width: 5;
+    transition: all 1s ease;
+  }
+  
+  .meu-circulo:hover{
+    cx: 70;
+    fill: green;
+    stroke-width: 10;
+  }
