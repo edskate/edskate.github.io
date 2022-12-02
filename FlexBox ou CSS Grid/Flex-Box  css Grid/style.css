@@ -1,0 +1,18 @@
+ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li{
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  li:hover{
+    opacity: 0.5;
+    background-color: gray;
+  }
