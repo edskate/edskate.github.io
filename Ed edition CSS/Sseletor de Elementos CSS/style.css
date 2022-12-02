@@ -1,0 +1,19 @@
+p {
+    color: blue;
+  }
+
+  #first {
+    color: blue;
+  }
+
+  .first {
+    color: blue;
+  }
+
+  .first p {
+    color: blue;
+  }
+  @media (max-width:600px){
+	/* Estilizações CSS */
+}
+
