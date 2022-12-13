@@ -1,0 +1,51 @@
+body {
+  justify-content: center;
+  display: block;
+  display: flow-root;
+  text-align: center;
+  position: relative;
+  position: absolute;
+  background-color: #ffffff;
+ 
+}
+h1,
+h2 {
+  color: #2d6b6b;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+p,
+li {
+  font-size: 31px;
+  text-align: center;
+  position: relative;
+}
+h3 {
+  font-size: 40px;
+}
+h1 {
+  font-size: 50px;
+
+}
+li{
+    color: rgb(104, 77, 77); text-shadow: black 0.1em 0.1em 0.2em
+}
+#container {
+  display: inline-block;
+  position: relative;
+  
+}
+
+#container figcaption {
+  position: absolute;
+  top: 145px;
+  right: 20px;
+  font-size: 40px;
+  color: black;
+  text-shadow: 0px 0px 5px black;
+  margin: 90px;
+
+
+}
+button{
+  font-size: 30px;
+}
