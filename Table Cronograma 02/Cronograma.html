@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+            content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+  
+    <!-- Set title of web page -->
+    <title>GFG Animated Table</title>
+  
+    <style>
+  
+        /* Set the content of table 
+        using css properties */
+        table {
+            width: 700px;
+            margin: auto;
+            text-align: center;
+            table-layout: fixed;
+        }
+  
+        /* Applying css properties 
+        to table components */
+        table,
+        td,
+        tr {
+            padding: 12px;
+            color: wheat;
+            background: indigo;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 
+                'Lucida Sans Regular',
+                'Lucida Grande', 
+                'Lucida Sans Unicode',
+                Geneva, Verdana, sans-serif;
+                width: 1200PX;
+        }
+  
+        /* Apply css properties to th */
+        th {
+            color: white;
+            border: 1px solid black;
+            border-collapse: collapse;
+            background: cadetblue;
+        }
+  
+        /* Apply hover effect to td */
+        td:hover {
+            background: orangered;
+        }
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .buttons {
+            margin: 10%;
+            text-align: center;
+        }
+        
+        .btn-hover {
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+        
+            border-radius: 50px;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        .btn-hover:hover {
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        .btn-hover:focus {
+            outline: none;
+        }
+        
+        .btn-hover.color-1 {
+            background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+            box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+        }
+        .btn-hover.color-2 {
+            background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+            box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+        }
+        .btn-hover.color-3 {
+            background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+        }
+        .btn-hover.color-4 {
+            background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+            box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+        }
+        .btn-hover.color-5 {
+            background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+            box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+        }
+        .btn-hover.color-6 {
+            background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+            box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+        }
+        .btn-hover.color-7 {
+            background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+            box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+        }
+        .btn-hover.color-8 {
+            background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+            box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+        }
+        .btn-hover.color-9 {
+            background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+            box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+        }
+        .btn-hover.color-10 {
+                background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+            box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+        }
+        .btn-hover.color-11 {
+               background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+        }
+        
+    </style>
+</head>
+  
+<body>
+  
+    <!-- Creating the structure of table -->
+    <table>
+        <tr>
+            <!-- Creating heading of table -->
+            <th>Grupo de dança </th>
+            <th>Data</th>
+            <th>Hora do ensaio</th>
+            <th>Fim da aula.</th>
+            <th>Comfirmado.</th>
+        </tr>
+          
+        <tr>
+            <!-- Add 1st data to table -->
+            <td>Peter</td>
+            <td>09:00</td>
+            <td>08:50 ás 10:00</td>
+            <td>Ás 10:00</td>
+            <td><button>OK</button></td>
+        </tr>
+          
+        <tr>
+            <!-- Add 2nd data to table -->
+            <td>Liza</td>
+            <td>09:00</td>
+            <td>09:00 ás 10:00</td>
+            <td>Ás 10:00</td>
+            <td><button>OK</button></td>
+        </tr>
+  
+        <tr>
+            <!-- Add 3rd data to table -->
+            <td>John</td>
+            <td>09:00</td>
+            <td>09:00 ás 10:00</td>
+            <td>Ás 10:00</td>
+            <td><button>OK</button></td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>09:00</td>
+            <td>09:00 ás 10:00</td>
+            <td>Ás 10:00</td>
+            <td><button>OK</button></td>
+        </tr>
+        <tr>
+            <td>Camila</td>
+            <td>09:00</td>
+            <td>09:00 ás 10:00</td>
+            <td>Ás 10:00</td>
+            <td><button class="btn-hover color-1"><a href='Cronograma01.html'>Ok</a></button></td>
+          
+        </tr>
+        <h1>CSS button gradient effects</h1>
+        <div class="buttons">
+            <button class="btn-hover color-1">BUTTON</button>
+            <button class="btn-hover color-2">BUTTON</button>
+            <button class="btn-hover color-3">BUTTON</button>
+            <button class="btn-hover color-4">BUTTON</button>
+            <button class="btn-hover color-5">BUTTON</button>
+            <button class="btn-hover color-6">BUTTON</button>
+            <button class="btn-hover color-7">BUTTON</button>
+            <button class="btn-hover color-8">BUTTON</button>
+            <button class="btn-hover color-9">BUTTON</button>
+            <button class="btn-hover color-10">BUTTON</button>
+            <button class="btn-hover color-11">BUTTON</button>
+        </div>
+    </table>
+</body>
+  
+</html>
