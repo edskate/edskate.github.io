@@ -1,0 +1,22 @@
+body{
+margin: 50px;
+padding: 5px;
+font-size: 30px;
+}
+
+h1{
+color: #0080ff;
+text-align: center;
+text-shadow: 12px 12px 12px #000000;
+}
+h2{
+color: #104d2e;
+text-shadow: 12px 12px 12px #000000;
+}
+li{
+text-shadow: 1px 1px 1px #000000;
+color: #3c3636;
+}
+strong{
+color: #0080ff;
+}
