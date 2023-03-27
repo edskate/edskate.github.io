@@ -2,6 +2,9 @@
 Resumo de estudos 
 Treinamendo de Estudos.
 - 
+
+# stude todos os dia 
+
 ```
-estude todos os dia Para fixar é memorizar seus estudo.
+Para fixar é memorizar seus estudo.
 ```
