@@ -6,5 +6,5 @@ Treinamendo de Estudos.
 # Estude todos os dia 
 
 ```
-Para fixar é memorizar seus estudo.
+Para fixar é memorizar seus estudos.
 ```
