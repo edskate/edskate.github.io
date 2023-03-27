@@ -1,3 +1,0 @@
-# Inglês
-- World
-- cold
