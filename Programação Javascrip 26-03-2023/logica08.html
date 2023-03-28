@@ -1,0 +1,38 @@
+<p>Com o alvo criado, precisamos fazer com que seu aparecimento seja aleatório, ou seja, que sejam criadas coordenadas arbitrárias. Para isso, vamos inserir as instruções para a criação do alvo dentro de uma nova função chamada desenhaAlvo(), e a chamaremos logo em seguida:</p>
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var raio = 10;
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+
+    }
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    function desenhaAlvo() {
+
+        desenhaCirculo(100, 100, raio+20, 'red');
+        desenhaCirculo(100, 100, raio+10, 'white');
+        desenhaCirculo(100, 100, raio, 'red');
+
+    }
+
+    desenhaAlvo();
+
+</script>

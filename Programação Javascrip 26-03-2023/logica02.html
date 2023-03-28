@@ -1,0 +1,29 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+
+    }
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+
+    }
+
+    desenhaCirculo(100, 100, 10, 'red');
+
+</script>
+<p>Para efetivamente desenharmos o círculos, temos que chamar a função desenhaCirculo(), com os parâmetros x e y ambos com valor 100, raio 10 e a cor vermelha (red), já que estamos lidando com o círculo central:</p>

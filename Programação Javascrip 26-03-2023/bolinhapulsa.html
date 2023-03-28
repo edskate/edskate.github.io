@@ -1,0 +1,36 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  var tela = document.querySelector('canvas');
+  var pincel = tela.getContext('2d');
+  pincel.fillStyle = 'lightgray';
+  pincel.fillRect(0, 0, 600, 400);
+
+  function desenhaCirculo(x, y, raio, cor) {
+    pincel.fillStyle = cor;
+    pincel.beginPath();
+    pincel.arc(x, y, raio, 0, 2 * Math.PI);
+    pincel.fill();
+  }
+
+  function limpaTela() {
+    pincel.clearRect(0, 0, 600, 400);
+  }
+  var raio = 19;
+  var fatorCrescimento = 0;
+
+  function atualizaTela() {
+    limpaTela();
+    if (raio > 30) {
+      fatorCrescimento = -1;
+    } else if (raio < 20) {
+      fatorCrescimento = 1;
+    }
+    raio = raio + fatorCrescimento;
+    desenhaCirculo(300, 200, raio, 'blue');
+  }
+  setInterval(atualizaTela, 20);
+</script>
+<h4>Parabéns! O primeiro é definir o tamanho inicial do raio em uma variável. Além disso, vamos definir uma variável chamada fatorCrescimento, que começará com 1. Esse fator de crescimento é importante, pois é ele que foi usado para incrementar o raio. Se for para a bolinha crescer, usamos um valor positivo, se for para diminuir, usamos um negativo. Depois disso criamos uma função que será a responsável em atualizar nossa tela, redesenhando nosso círculo, que pode crescer ou não. Além disso, como nosso raio começa de 19, o fator de crescimento será 1, fazendo com que nossa bolinha cresça, pois o fatorCrescimento é somado com o raio atual. O valor positivo será utilizado até que o tamanho do raio ultrapasse o limite de 30, fazendo com que fatorCrescimento seja negativo até que o valor do raio seja menor do que 20.
+
+    Em seguida desenhamos nosso círculo com base no valor de raio e chamamos nossa função atualizaTela através da função setInterval do JavaScript, com uma taxa de atualização de 20 milisegundos.</h4>
