@@ -27,5 +27,12 @@
 - Foreign function interface
 
 # 2020 PHP 8.0
+
 - Zend Engine 4.0
 - Just-In-time compilation
+- locale - independent number convertions
+- named arguments
+- expressão match
+- Operador Nullsafe
+- Readonly properties
+- Fibers
