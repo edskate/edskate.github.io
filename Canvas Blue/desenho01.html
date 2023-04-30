@@ -1,0 +1,22 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+  document.write("<h1>Criando ums quadrados azul.</h1>")
+  function desenhaQuadrado(x, y) {
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'blue';
+    pincel.fillRect(x, y, 50, 50);
+    pincel.strokeStyle = 'black';
+    pincel.strokeRect(x, y, 50, 50);
+
+
+  }
+
+  desenhaQuadrado(0, 0, 'blue');
+  desenhaQuadrado(100, 50, 'red');
+  desenhaQuadrado(0, 100, 'yellow');
+
+</script>
