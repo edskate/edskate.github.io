@@ -1,0 +1,73 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.game-board {
+width: 80%;
+height: 500px;
+border: 1px solid #333;
+margin: 0 auto;
+position: relative;
+overflow: hidden;
+}
+
+
+.ed {
+position: absolute;
+bottom: 0;
+width: 80px;
+animation: ed-animation 12s infinite;
+right: 0;
+}
+
+.ed{
+width: 150px;
+bottom: 0;
+position: absolute;
+bottom: 0;
+left: 5%;
+animation: jump 5100ms infinite;
+transform: rotate(1.3);
+
+
+}
+
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: ed-animation 12s infinite;
+right: 100%;
+}
+
+@keyframes ed-animation {
+from {
+right:0;
+}
+
+to{
+right:100%;
+}
+
+}
+
+@keyframes jump {
+0%{
+bottom: 0;
+}
+
+40%{
+bottom: 180px;
+}
+
+60%{
+bottom: 100px;
+
+}
+100%{
+bottom: 0;
+}
+}
