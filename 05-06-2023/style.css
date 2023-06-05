@@ -1,0 +1,16 @@
+body{
+    width: 300px;
+    margin: 5%;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+li{
+    font-size: 30px ;
+    text-decoration: none;
+    float: inline-end;
+}
